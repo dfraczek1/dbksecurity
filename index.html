@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DBK Security - Strona Główna</title>
+        <meta name="description" content="Interaktywny poradnik szybkiego startu dla Brackets.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-------------------------------------------------------------Czcionki-------------------------------------------------------------------->
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        </style>
+       
+<!---------------------------------------------------------------CSS----------------------------------------------------------------------->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/nawigacja.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/motyw.css">
+<!---------------------------------------------------------------Ikona--------------------------------------------------------------------->
+        <link href="zdj/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+  
+<!------------------------------------------------------------Nawigacja--------------------------------------------------------------------> 
+    <header>
+<div class="header">
+  <a href="index.html" class="logo"><img class="logos" src="zdj/logo.png"></a><div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox" /><div class="slider round"></div></label>
+</div>
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  if (currentTheme === 'dark') {
+    toggleSwitch.checked = true;
+  }
+}
+function switchTheme(event) {
+  if (event.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+  else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  }
+}
+toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+  <div class="header-right">
+    <a class="active" href="index.html">Strona Główna</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="cennik.html">Cennik</a>
+    <a href="regulamin.html">Regulamin</a>
+  </div>
+</div>
+    </header>
+<!---------------------------------------------------------------Treść--------------------------------------------------------------------->
+<section class="index1">
+    <article>
+            <div class="naglowek.index">
+            <hgroup class="naglowek-index">
+            <h1 class="h1home"></h1>
+            <h3 class="h3home"></h3></hgroup>
+            <center><div class="w3-content w3-section" style="max-width:1000px">
+                    <img class="mySlides" src="zdj/indeks.jpg" style="width:100%">
+                    <img class="mySlides" src="zdj/indeks2.jpg" style="width:100%">
+                    <img class="mySlides" src="zdj/indeks3.jpg" style="width:100%">
+</div></center></div>
+        <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
+</script>
+        <p class='first'></p>
+        </article>
+    </section>
+<!--------------------- Drugi tekst --------------------->
+<section class="index2">
+    <article class="wyroznia">
+    <center><div class="container"><div class="row head"><div class="col col-12"><div class="wrapper"><h2><span class="index2"></span></h2><p class=index2>Co wyróżnia nas od innych?</p></div></div></div><div class="row content"><div class="col col-12 col-md star"><div class="wrapper"><div class="circle"> <noscript><img src="zdj/1icon.png" alt="DBK Security - Nowoczesność"></noscript><img class=" lazyloaded" src="zdj/1icon.png" data-src="zdj/1icon.png" alt="DBK Security - Nowoczesność"></div><div class="podpis"><strong><h4>Nowoczesność</h4></strong><p class="pindex2">Nowatorskie podejście do tematu</p></div></div></div><div class="col col-12 col-md star"><div class="wrapper"><div class="circle"> <noscript><img src="zdj/2icon.png" alt="DBK Security - DOŚWIADCZENIE"></noscript><img class=" lazyloaded" src="zdj/2icon.png" data-src="zdj/2icon.png" alt="DBK Security - DOŚWIADCZENIE"></div><div class="podpis"><strong><h4>Doświadczenie</h4></strong><p class="pindex2">Duże doświadczenie w młodym stażu</p></div></div></div><div class="col col-12 col-md star"><div class="wrapper"><div class="circle"> <noscript><img src="zdj/3icon.png" alt="DBK Security - ZAANGAŻOWANIE"></noscript><img class=" lazyloaded" src="zdj/3icon.png" data-src="zdj/3icon.png" alt="DBK Security - ZAANGAŻOWANIE"></div><div class="podpis"><strong><h4>Zaangażowanie</h4></strong><p class="pindex2">Po prostu uwielbiamy naszą pracę</p></div></div></div><div class="col col-12 col-md star"><div class="wrapper"><div class="circle"> <noscript><img src="zdj/4icon.png" alt="DBK Security - KOMUNIKATYWNOŚĆ"></noscript><img class=" lazyloaded" src="zdj/4icon.png" data-src="zdj/4icon.png" alt="DBK Security - KOMUNIKATYWNOŚĆ"></div><div class="podpis"><strong><h4>Komunikatywność</h4></strong><p class="pindex2">Cenimy kontakt z naszymi klientami</p></div></div></div></center>
+    </article>
+<!--------------------- Trzeci tekst --------------------->
+    <article>
+    <p class="index3">Poznaj nas!</p>
+    <p class=pindex3>DBK Security to doświadczenie, wiedza oraz profesjonalizm działań na rynku ochrony osób i mienia. Jesteśmy firmą z polskim kapitałem z powodzeniem funkcjonującą od 2020 roku na terenie całego kraju. Na podstawie grupy wyspecjalizowanych spółek, świadczymy usługi ochrony na rzecz klientów biznesowych i indywidualnych, we wszystkich obszarach związanych z bezpieczeństwem.</p>
+<p class='index3'>Jak działamy?</p>
+<p class=pindex3>Bierzemy pełną odpowiedzialność za świadczone usługi, realizując ustalenia z Klientem, reagując jednocześnie na potrzeby pojawiające się w trakcie realizacji kontraktu.
+Proponowany przez nas Zintegrowany System Ochrony, gwarantuje optymalizację procesów ochronnych, podnosząc poziom bezpieczeństwa naszych Klientów.
+Dbamy o dobre relacje w biznesie, opierając je o konstruktywny dialog, profesjonalizm działań oraz partnerstwo.
+Potencjał Solid Security oparty jest o kompetentny i zaangażowany Zespół. Działamy we wszystkich regionach Polski, poprzez profesjonalnie zorganizowaną strukturę operacyjną.
+Pozycja DBK Security oraz ciągły i dynamiczny rozwój firmy, związany jest z umiejętnością wykorzystywania wieloletniego doświadczenia, z właściwym rozumieniem potrzeb Klienta oraz inwestowaniem w kapitał  ludzki i innowacyjne rozwiązania.
+Posiadamy polisę ubezpieczeniową na sumę 500.000 PLN
+Zapraszamy do grona zadowolonych Klientów!</p>
+    <div class="zakresuslug">
+    <p class="index3">Zakres świadczonych usług:</p>
+    <ul><li class="zakresuslug">Ochrona stacjonarna obiektów,</li>
+    <li class="zakresuslug">Projektowanie i instalacja systemów: 
+    <ul style="list-style-type:none;margin-left:10px;">
+    <li>- sygnalizacji włamania (SSWiN),</li>
+    <li>- telewizji przemysłowej (CCTV),</li>
+    <li>- przeciwpożarowych (P.POŻ),</li>
+    <li>- kontroli dostępu,</li>
+    <li>- kontroli obchodów, rejestracji czasu pracy,</li>
+    </ul>
+<li class="zakresuslug">Konserwacja zainstalowanych systemów,</li>
+<li class="zakresuslug">Monitorowania pojazdów GPS,</li>
+<li class="zakresuslug">Monitorowanie obiektów,</li>
+<li class="zakresuslug">Grupy interwencyjne.</li>
+</ul></div>
+       <p class="index3">GALERIA ZDJĘĆ </p>
+        <div class="css_anchor_gallery">
+    <ul class="pictures_">
+        <li id="z1">
+            <img src="zdj/pixel-500x500.png" alt="" />
+        </li>
+        <li id="z2">
+            <img src="zdj/monitoring.png" alt="" />
+        </li>
+        <li id="z3">
+            <img src="zdj/cctv-camera-monitoring-500x500.png" alt="" />
+        </li>
+      
+    </ul>
+
+    <ul class="thumbnails_">
+        <li><a href="#z1"><img src="zdj/pixel-500x500.png" alt="" /></a></li>
+        <li><a href="#z2"><img src="zdj/monitoring.png" alt="" /></a></li>
+        <li><a href="#z3"><img src="zdj/cctv-camera-monitoring-500x500.png" alt="" /></a></li>
+       
+    </ul>
+</div>
+            </div>
+        </li> 
+    </ul> 
+</div>
+    </article>
+</section>  
+<!---------------------------------------------------------------Stopka-------------------------------------------------------------------->
+<div class="footer">
+        <footer>
+ <center><div id='licznik'><a href='http://www.counterliczniki.com'></a> <script type='text/javascript' src='https://www.counterliczniki.com/auth.php?id=1febddda177a7dda294ccd9687f8a791bc7a19ee'></script>
+<script type="text/javascript" src="https://www.counterliczniki.com/pl/home/counter/797199/t/3"></script></div></center>
+            <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/"><i class="icon ion-social-snapchat"></i></a><a href="https://www.twitter.com/"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Strona Główna</a></li>
+                <li class="list-inline-item"><a href="cennik.html">Cennik</a></li>
+                <li class="list-inline-item"><a href="kontakt.html">Kontakt</a></li>
+                <li class="list-inline-item"><a href="regulamin.html">Regulamin</a></li>
+            </ul>
+            <p class="copyright">Copyright © 2021 DBK Security. Wszystkie prawa zastrzeżone.</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>  
+</html>

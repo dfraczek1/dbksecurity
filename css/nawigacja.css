@@ -1,0 +1,60 @@
+/* Styl z podświetleniem szarym */
+.header {
+    overflow: hidden;
+  padding: 5px 5px;
+}
+
+/* Styl linków w headerze */
+.header a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+/* Styl linku do logo ~ ustawiona jest ta sama wartość wysokości wiersza i rozmiaru czcionki, aby zapobiec zwiększaniu nagłówka, gdy czcionka się powiększa */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Zmiana koloru tła po najechaniu myszą*/
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Styl aktywnej zakładki */
+.header a.active {
+  background-image: linear-gradient(90deg, #e1beff, #28baf0);
+  color: white;
+}
+
+/* Linki po prawej stronie strony */
+.header-right {
+  float: right;
+ margin-top: 15px;
+}
+
+/* Responsywność - gdy ekran ma szerokość 500 pikseli lub mniej, ułożenie linków jeden na drugim */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+      top: 5px
+  }
+}
+i.fa fa-envelope-o {
+    position: relative;
+    left: 848px
+}
+div.nrtel {
+    position: relative;
+    left: 700px
+}
